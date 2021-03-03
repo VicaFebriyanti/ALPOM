@@ -46,6 +46,11 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+
+        'masyarakat' => [
+            'driver' => 'session',
+            'provider' => 'masyarakat',
+          ],
     ],
 
     /*
@@ -69,6 +74,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+
+        'masyarakat' => [
+            'driver' => 'eloquent',
+            'model' => App\Masyarakat::class,
         ],
 
         // 'users' => [
